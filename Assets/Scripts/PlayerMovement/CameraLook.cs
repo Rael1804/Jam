@@ -13,7 +13,7 @@ public class CameraLook : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    void Update()
+    public void Update()
     {
         float mouseX = Input.GetAxis("Mouse X") * Sensibilidad * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * Sensibilidad * Time.deltaTime;
