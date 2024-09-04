@@ -11,8 +11,6 @@ public class Door : Interactable
 
     public override void Interact()
     {
-        print(this.gameObject.name);
-
         if (open)
         {
             door.DORotate(new Vector3(0, 0, 0), 1);
