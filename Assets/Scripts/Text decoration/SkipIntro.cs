@@ -6,6 +6,7 @@ public class SkipIntro : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject canvas;
+    public GameObject tiempo;
    
     // Update is called once per frame
     void Update()
@@ -14,6 +15,7 @@ public class SkipIntro : MonoBehaviour
         {
             // Aquí colocas la acción que quieres que ocurra cuando se presiona "Enter"
             canvas.SetActive(false);
+            tiempo.SetActive(true);
         }
     }
 }

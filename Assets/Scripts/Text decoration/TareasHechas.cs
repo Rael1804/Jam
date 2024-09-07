@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class TareasHechas : MonoBehaviour
 {
-    public TextMeshProUGUI cuchillo; 
-    public TextMeshProUGUI charco;
-    public TextMeshProUGUI ventana;
-    public TextMeshProUGUI candado;
-    public TextMeshProUGUI barrer;
-    public TextMeshProUGUI cable;
+    public TextMeshPro cuchillo; 
+    public TextMeshPro charco;
+    public TextMeshPro ventana;
+    public TextMeshPro candado;
+    public TextMeshPro barrer;
+    public TextMeshPro cable;
 
     public void SetTachado()
     {
