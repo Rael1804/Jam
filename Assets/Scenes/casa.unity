@@ -49991,7 +49991,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17414
+  m_Name: pb_Mesh33830
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -50267,7 +50267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a95e453096ee18448bed69d2a90e7122, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.61
+      value: -7.96
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a95e453096ee18448bed69d2a90e7122, type: 3}
       propertyPath: m_LocalRotation.w
@@ -53304,7 +53304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &882566857
 MonoBehaviour:
   m_ObjectHideFlags: 0
