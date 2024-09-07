@@ -14,12 +14,12 @@ public class Door : Interactable
         if (open)
         {
             door.DOLocalRotate(new Vector3(0, 0, 0), 1);
-            Debug.Log("Abriendo");
+            //Debug.Log("Abriendo");
         }
         else
         {
             door.DOLocalRotate(new Vector3(0, 90, 0), 1);
-            Debug.Log("Cerrando");
+            //Debug.Log("Cerrando");
         }
 
         open = !open;
