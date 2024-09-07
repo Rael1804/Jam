@@ -11,7 +11,7 @@ namespace Scenes.Level4.Scripts.PlayerMovement
         public LayerMask groundLayer;
 
         private Rigidbody rb;
-        //private Animator an;
+        private Animator an;
         //private AudioSource audi;
 
         private void Awake()
@@ -21,7 +21,7 @@ namespace Scenes.Level4.Scripts.PlayerMovement
             //audi.Play();
             rb.freezeRotation = true;
 
-           // an = GetComponent<Animator>();
+           an = GetComponent<Animator>();
         }
 
         private void Update()
@@ -56,7 +56,7 @@ namespace Scenes.Level4.Scripts.PlayerMovement
             rb.velocity += transform.right * aceleration * h;
 
             bool isMoving = (h != 0 || v != 0);
-            //an.SetBool("Walking", isMoving);
+            an.SetBool("Walking", isMoving);
         }
 
         private void Jump()
