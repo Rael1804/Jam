@@ -23,13 +23,13 @@ public class Door : Interactable
     {
         if (open)
         {
-            audio.PlayOneShot(openAudio);
+            audio.PlayOneShot(closeAudio);
             door.DOLocalRotate(new Vector3(0, 0, 0), 1);
             //Debug.Log("Abriendo");
         }
         else
         {
-            audio.PlayOneShot(closeAudio);
+            audio.PlayOneShot(openAudio);
             door.DOLocalRotate(new Vector3(0, 90, 0), 1);
             //Debug.Log("Cerrando");
         }
