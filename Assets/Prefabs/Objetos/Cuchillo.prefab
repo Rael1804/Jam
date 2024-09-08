@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 6778178932999903994}
   - component: {fileID: 1632051341239426883}
   - component: {fileID: 1799441613}
-  m_Layer: 0
+  - component: {fileID: 3590222702961246873}
+  m_Layer: 6
   m_Name: Cuchillo
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,6 +63,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3590222702961246873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3469694412214620640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44fc97c07a00ea047b99d4864cf8747a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6615254498394774009
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,7 +86,7 @@ GameObject:
   - component: {fileID: 7185887422253782803}
   - component: {fileID: 1892698324088070541}
   - component: {fileID: 8017035101779230034}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6325516901801741430}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CuchilloModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +199,7 @@ GameObject:
   - component: {fileID: 1545119388215971439}
   - component: {fileID: 5308817750120918216}
   - component: {fileID: 2471857190036054425}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cubo
   m_TagString: Untagged
   m_Icon: {fileID: 0}

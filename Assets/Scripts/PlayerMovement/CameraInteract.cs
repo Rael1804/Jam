@@ -41,7 +41,7 @@ public class CameraInteract : MonoBehaviour
         if (other.gameObject.CompareTag("Item"))
         {
             target = other.gameObject;
-            target.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+            //target.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
         }
     }
 
@@ -49,7 +49,7 @@ public class CameraInteract : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Item"))
         {
-            target.GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
+            //target.GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
             target = null;
         }
     }
