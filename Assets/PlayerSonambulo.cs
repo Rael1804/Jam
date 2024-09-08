@@ -18,17 +18,16 @@ public class PlayerSonambulo : MonoBehaviour
 
     void OnTriggerEnter(Collider other){
         if(other.tag=="WayPoint"){
-            if(other.gameObject.name == "WP (5)"){
-                if(true){//victoria)
-                    victoria.SetActive(true);
-                    }else{
-                        derrota.SetActive(true);
-                        }//derrota
-                        this.gameObject.SetActive(false);
+            if(other.gameObject.name == "WP 9"){
+                victoria.SetActive(true);
+                this.gameObject.SetActive(false);
+                
             }else{
-                destino= other.gameObject.GetComponent<Waypoints>().nextPoint;
-                navMesh.destination= destino.position;  
-            }
+                    destino= other.gameObject.GetComponent<Waypoints>().nextPoint;
+                    navMesh.destination= destino.position;  
+                }
+        }else if(other.tag=="Item"){
+            derrota.SetActive(true);
         }
     }
 }
