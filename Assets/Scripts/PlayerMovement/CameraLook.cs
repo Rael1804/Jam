@@ -8,26 +8,29 @@ public class CameraLook : MonoBehaviour
     public float Sensibilidad = 100;
     public Transform playerBody;
     public float xRotacion;
-    private void Start()
+    public void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * Sensibilidad * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * Sensibilidad * Time.deltaTime;
+        if (GameManager.Instance.tiempo.currentTime > 0.1f)
+        {
+            float mouseX = Input.GetAxis("Mouse X") * Sensibilidad * Time.deltaTime;
+            float mouseY = Input.GetAxis("Mouse Y") * Sensibilidad * Time.deltaTime;
 
-        xRotacion -= mouseY;
-        xRotacion = Mathf.Clamp(xRotacion, -90, 90);
+            xRotacion -= mouseY;
+            xRotacion = Mathf.Clamp(xRotacion, -90, 90);
 
-        transform.localRotation = Quaternion.Euler(xRotacion, 0, 0);
-        playerBody.Rotate(Vector3.up * mouseX);
-        float newYAngle = playerBody.eulerAngles.y;
-        Vector3 currentEulerAngles = transform.localEulerAngles;
-        currentEulerAngles.y = newYAngle;
-        //transform.eulerAngles = currentEulerAngles;
+            transform.localRotation = Quaternion.Euler(xRotacion, 0, 0);
+            playerBody.Rotate(Vector3.up * mouseX);
+            float newYAngle = playerBody.eulerAngles.y;
+            Vector3 currentEulerAngles = transform.localEulerAngles;
+            currentEulerAngles.y = newYAngle;
+            //transform.eulerAngles = currentEulerAngles;
 
-        transform.DORotate(currentEulerAngles, 0.15f, RotateMode.Fast);
+            transform.DORotate(currentEulerAngles, 0.15f, RotateMode.Fast);
+        }
     }
 }
