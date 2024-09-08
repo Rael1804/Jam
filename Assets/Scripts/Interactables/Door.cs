@@ -41,7 +41,7 @@ public class Door : Interactable
     {
         if( GameManager.Instance.tiempo.currentTime < 0.1f )
         {
-            door.DOLocalRotate(new Vector3(0, 0, 0), 1);
+            door.DOLocalRotate(new Vector3(0, 90, 0), 1);
         }
     }
 }
