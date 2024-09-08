@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5955999739133213820}
   - component: {fileID: 9215485189418132526}
   - component: {fileID: 3062773611031909077}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cable pelado
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441806016877552392}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.5, y: 2.2, z: 0.5}
@@ -59,6 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04f2c5083c440914388770377c39ba70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  needToReplace: 1
   tipo: 3
   boxWithAllTheKnifes: {fileID: 4703908997738136507, guid: 8df1dcd71679e0d49a5dbdb9c27b523d, type: 3}
 --- !u!54 &3062773611031909077
@@ -88,7 +89,7 @@ GameObject:
   - component: {fileID: 7863973338335838013}
   - component: {fileID: 4314688017652657149}
   - component: {fileID: 8708318315898509282}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cilindro.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +170,7 @@ GameObject:
   - component: {fileID: 1045690314947058888}
   - component: {fileID: 4881605449777484707}
   - component: {fileID: 8373941753186111088}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cilindro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +251,7 @@ GameObject:
   - component: {fileID: 7118128426963946351}
   - component: {fileID: 3125332006166159041}
   - component: {fileID: 983162207439966363}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cilindro.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4677057559617302084}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -368,7 +369,7 @@ GameObject:
   - component: {fileID: 4360727766044175627}
   - component: {fileID: 2869289100455957944}
   - component: {fileID: 8065494172836325839}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cilindro.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,7 +450,7 @@ GameObject:
   - component: {fileID: 8675080291987763530}
   - component: {fileID: 2104510163243737773}
   - component: {fileID: 7800616559880973477}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cilindro.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -530,7 +531,7 @@ GameObject:
   - component: {fileID: 5317474231635455484}
   - component: {fileID: 4184489830685951342}
   - component: {fileID: 3162762001759988356}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cilindro.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -611,7 +612,7 @@ GameObject:
   - component: {fileID: 4109516174489350093}
   - component: {fileID: 1486391682713937823}
   - component: {fileID: 218535624612236610}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cilindro.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}

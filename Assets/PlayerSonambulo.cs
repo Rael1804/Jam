@@ -17,6 +17,7 @@ public class PlayerSonambulo : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
+        Debug.Log(other.tag);
         if(other.tag=="WayPoint"){
             if(other.gameObject.name == "WP 9"){
                 victoria.SetActive(true);
@@ -27,7 +28,9 @@ public class PlayerSonambulo : MonoBehaviour
                     navMesh.destination= destino.position;  
                 }
         }else if(other.tag=="Item"){
+            
             derrota.SetActive(true);
+            this.gameObject.SetActive(false);
         }
     }
 }

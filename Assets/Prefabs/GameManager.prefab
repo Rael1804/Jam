@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabablePosition: {fileID: 0}
   maxFps: 144
+  tiempo: {fileID: 0}
   grabableObject: {fileID: 0}
   tareas: {fileID: 0}
 --- !u!114 &1528562464
@@ -81,6 +82,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 0}
-  totalTime: 10
+  totalTime: 1
   player: {fileID: 0}
   sonambulo: {fileID: 0}
