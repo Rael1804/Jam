@@ -5,7 +5,7 @@ public class Tiempo : MonoBehaviour
 {
     public TextMeshProUGUI timerText; // Referencia al TextMeshProUGUI
     public float totalTime = 300f; // 5 minutos en segundos (5 * 60 = 300)
-    private float currentTime;
+    public float currentTime;
     private bool hasStarted = false;
 
     public GameObject player;
