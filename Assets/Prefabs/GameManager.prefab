@@ -82,6 +82,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 0}
-  totalTime: 1
+  totalTime: 150
   player: {fileID: 0}
   sonambulo: {fileID: 0}
