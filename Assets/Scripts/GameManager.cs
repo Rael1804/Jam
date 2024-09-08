@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get { return _instance; } }
     public int maxFps = 144;
 
+
+    [HideInInspector] public Tiempo tiempo;
     [HideInInspector] public GameObject grabableObject;
     [HideInInspector] public TareasHechas tareas;
 
@@ -26,6 +28,7 @@ public class GameManager : MonoBehaviour
             QualitySettings.vSyncCount = 1;
             Application.targetFrameRate = maxFps;
             tareas = GetComponent<TareasHechas>();
+            tiempo = GetComponent<Tiempo>();
         }
 
         DontDestroyOnLoad(gameObject);

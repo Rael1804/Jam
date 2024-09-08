@@ -18,11 +18,10 @@ public class TareasHechas : MonoBehaviour
                 numTareasHechas++;
                 switch (typeOfTask)
                 {
-
                         case TypeOfGrabable.Broom:
                                 barrer.fontStyle |= FontStyles.Strikethrough;
                                 break;
-                        case TypeOfGrabable.Hammer:
+                        case TypeOfGrabable.Wood:
                                 ventana.fontStyle |= FontStyles.Strikethrough;
                                 break;
                         case TypeOfGrabable.Key:
@@ -37,7 +36,6 @@ public class TareasHechas : MonoBehaviour
                         case TypeOfGrabable.Towel:
                                 charco.fontStyle |= FontStyles.Strikethrough;
                                 break;
-
                 }
         }
 }
