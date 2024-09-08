@@ -5,20 +5,21 @@ using UnityEngine;
 
 public class KnifeHolder : Interactable
 {
+    public TypeOfGrabable tipo;
     public GameObject boxWithAllTheKnifes;
     public override void Interact()
     {
         if (GameManager.Instance.grabableObject != null)
         {
             GameObject knife = GameManager.Instance.grabableObject;
-            if (knife.GetComponent<Grabable>().typeOfobject == TypeOfGrabable.Knife)
+            if (knife.GetComponent<Grabable>().typeOfobject == tipo)
             {
                 Invoke("ChangeModel", 0.5f);
 
                 Destroy(knife, 0.5f);
                 knife.transform.DOMove(transform.position, 0.5f);
                 knife.transform.DORotate(transform.rotation.eulerAngles, 0.5f);
-                GameManager.Instance.tareas.SetCuchillo();
+                GameManager.Instance.tareas.doneTask(tipo);
             }
         }
     }

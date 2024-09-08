@@ -12,39 +12,32 @@ public class TareasHechas : MonoBehaviour
 
         [HideInInspector] public int numTareasHechas;
 
-        public void SetCuchillo()
-        {
-                cuchillo.fontStyle |= FontStyles.Strikethrough;
-                numTareasHechas++;
-        }
 
-        public void SetCharco()
+        public void doneTask(TypeOfGrabable typeOfTask)
         {
-                charco.fontStyle |= FontStyles.Strikethrough;
                 numTareasHechas++;
-        }
+                switch (typeOfTask)
+                {
 
-        public void SetVentana()
-        {
-                ventana.fontStyle |= FontStyles.Strikethrough;
-                numTareasHechas++;
-        }
+                        case TypeOfGrabable.Broom:
+                                barrer.fontStyle |= FontStyles.Strikethrough;
+                                break;
+                        case TypeOfGrabable.Hammer:
+                                ventana.fontStyle |= FontStyles.Strikethrough;
+                                break;
+                        case TypeOfGrabable.Key:
+                                candado.fontStyle |= FontStyles.Strikethrough;
+                                break;
+                        case TypeOfGrabable.Knife:
+                                cuchillo.fontStyle |= FontStyles.Strikethrough;
+                                break;
+                        case TypeOfGrabable.Tape:
+                                cable.fontStyle |= FontStyles.Strikethrough;
+                                break;
+                        case TypeOfGrabable.Towel:
+                                charco.fontStyle |= FontStyles.Strikethrough;
+                                break;
 
-        public void SetCandado()
-        {
-                candado.fontStyle |= FontStyles.Strikethrough;
-                numTareasHechas++;
-        }
-
-        public void SetBarrer()
-        {
-                barrer.fontStyle |= FontStyles.Strikethrough;
-                numTareasHechas++;
-        }
-
-        public void SetCable()
-        {
-                cable.fontStyle |= FontStyles.Strikethrough;
-                numTareasHechas++;
+                }
         }
 }

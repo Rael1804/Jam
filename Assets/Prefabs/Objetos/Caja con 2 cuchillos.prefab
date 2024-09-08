@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04f2c5083c440914388770377c39ba70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tipo: 5
   boxWithAllTheKnifes: {fileID: 8012691699221058566, guid: b756206ef00caee4a8219adc62cef92e, type: 3}
 --- !u!65 &48783650091532123
 BoxCollider:
