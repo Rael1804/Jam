@@ -48749,8 +48749,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233671664}
   m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -15.958, y: -1.04, z: -2.874}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalPosition: {x: -15.958, y: -1.04, z: -2.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1410572494}
   m_RootOrder: 0
@@ -56500,13 +56500,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145222240}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 9.334, y: -1.074, z: -5.82}
-  m_LocalScale: {x: 0.01, y: -0.01, z: 0.01}
+  m_LocalRotation: {x: -0.7071068, y: 0.7071068, z: -0, w: 0}
+  m_LocalPosition: {x: 10.44, y: -1.074, z: -5.82}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1410572494}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -90}
 --- !u!1 &1173081245
 GameObject:
   m_ObjectHideFlags: 0
@@ -59400,6 +59400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Candado
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f9f213bfedfeee4a966f0a665a6092d, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f9f213bfedfeee4a966f0a665a6092d, type: 3}
 --- !u!4 &1326412306 stripped
@@ -60121,7 +60125,7 @@ MonoBehaviour:
   - {fileID: 233671665}
   - {fileID: 1910803896}
   - {fileID: 1145222241}
-  objeto: {fileID: 919132149155446097, guid: e5e5bf93b9f31fb4ab4bf1255ec0cead, type: 3}
+  objeto: {fileID: 441806016877552392, guid: 1f9548f5b4ded2d4eaace286a3cc0f2d, type: 3}
 --- !u!1 &1416085147
 GameObject:
   m_ObjectHideFlags: 0
@@ -67216,6 +67220,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4504880889509189541, guid: 085a08379fc27ff4a97814747b8aeb21, type: 3}
   m_PrefabInstance: {fileID: 1896476283}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1899377157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f9f213bfedfeee4a966f0a665a6092d, type: 3}
+  m_PrefabInstance: {fileID: 1326412305}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1899377160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899377157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f2c5083c440914388770377c39ba70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  needToReplace: 0
+  tipo: 1
+  boxWithAllTheKnifes: {fileID: 0}
+--- !u!54 &1899377161
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899377157}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1899377162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899377157}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 4, z: 3}
+  m_Center: {x: -0.022324584, y: 0.22762229, z: -0.17609906}
 --- !u!1 &1910803895
 GameObject:
   m_ObjectHideFlags: 0
@@ -67241,7 +67294,7 @@ Transform:
   m_GameObject: {fileID: 1910803895}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -16.711, y: -1.04, z: 3.18}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1410572494}
   m_RootOrder: 1
