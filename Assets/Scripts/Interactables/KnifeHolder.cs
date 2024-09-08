@@ -26,7 +26,7 @@ public class KnifeHolder : Interactable
                         Invoke("ChangeModel", 0.5f);
                     }
 
-                    Destroy(knife, 5f);
+                    Destroy(knife, 0.5f);
                     knife.transform.DOMove(transform.position, 0.5f);
                     knife.transform.DORotate(transform.rotation.eulerAngles, 0.5f);
                     GameManager.Instance.tareas.doneTask(tipo);

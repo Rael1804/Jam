@@ -6,6 +6,7 @@ public class Tiempo : MonoBehaviour
     public TextMeshProUGUI timerText; // Referencia al TextMeshProUGUI
     public float totalTime = 300f; // 5 minutos en segundos (5 * 60 = 300)
     private float currentTime;
+    private bool hasStarted = false;
 
     public GameObject player;
     public GameObject sonambulo;
@@ -17,9 +18,14 @@ public class Tiempo : MonoBehaviour
         UpdateTimerDisplay();
     }
 
-    void Update()
+    public void Update()
     {
-        if (currentTime > 0)
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            hasStarted = true;
+        }
+
+        if (currentTime > 0 && hasStarted)
         {
             // Restamos el tiempo que ha pasado desde el último frame
             currentTime -= Time.deltaTime;
@@ -32,7 +38,9 @@ public class Tiempo : MonoBehaviour
 
             // Actualizar el texto del temporizador
             UpdateTimerDisplay();
-        }else if(currentTime ==0){
+        }
+        else if (currentTime == 0)
+        {
             player.SetActive(false);
             sonambulo.SetActive(true);
             this.gameObject.SetActive(false);
