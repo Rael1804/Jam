@@ -7,6 +7,9 @@ public class Tiempo : MonoBehaviour
     public float totalTime = 300f; // 5 minutos en segundos (5 * 60 = 300)
     private float currentTime;
 
+    public GameObject player;
+    public GameObject sonambulo;
+
     void Start()
     {
         // Inicializamos el tiempo al valor total
@@ -29,6 +32,10 @@ public class Tiempo : MonoBehaviour
 
             // Actualizar el texto del temporizador
             UpdateTimerDisplay();
+        }else if(currentTime ==0){
+            player.SetActive(false);
+            sonambulo.SetActive(true);
+            this.gameObject.SetActive(false);
         }
     }
 
