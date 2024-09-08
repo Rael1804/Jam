@@ -8,8 +8,15 @@ public class KnifeHolder : Interactable
     public bool needToReplace = true;
     public TypeOfGrabable tipo;
     public GameObject boxWithAllTheKnifes;
+    public AudioClip clip;
 
     private bool alreadyInteracted = false;
+    private AudioSource audi;
+
+    public void Awake()
+    {
+        audi = GetComponent<AudioSource>();
+    }
 
     public override void Interact()
     {
@@ -18,6 +25,7 @@ public class KnifeHolder : Interactable
             alreadyInteracted = true;
             if (GameManager.Instance.grabableObject != null)
             {
+                audi.PlayOneShot(clip);
                 GameObject knife = GameManager.Instance.grabableObject;
                 if (knife.GetComponent<Grabable>().typeOfobject == tipo)
                 {
