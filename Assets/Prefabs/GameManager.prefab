@@ -45,8 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabablePosition: {fileID: 0}
-  grabableObject: {fileID: 0}
   maxFps: 144
+  grabableObject: {fileID: 0}
+  tareas: {fileID: 0}
 --- !u!114 &1528562464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,3 +66,4 @@ MonoBehaviour:
   candado: {fileID: 0}
   barrer: {fileID: 0}
   cable: {fileID: 0}
+  numTareasHechas: 0

@@ -5,13 +5,16 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public Transform grabablePosition;
-    [HideInInspector] public GameObject grabableObject;
-    private static GameManager _instance;
     public static GameManager Instance { get { return _instance; } }
-
     public int maxFps = 144;
 
-    private void Awake()
+    [HideInInspector] public GameObject grabableObject;
+    [HideInInspector] public TareasHechas tareas;
+
+
+    private static GameManager _instance;
+
+    public void Awake()
     {
         if (_instance != null && _instance != this)
         {
@@ -22,6 +25,7 @@ public class GameManager : MonoBehaviour
             _instance = this;
             QualitySettings.vSyncCount = 1;
             Application.targetFrameRate = maxFps;
+            tareas = GetComponent<TareasHechas>();
         }
 
         DontDestroyOnLoad(gameObject);

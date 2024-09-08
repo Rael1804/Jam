@@ -4,8 +4,21 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Scripting;
 
+public enum TypeOfGrabable
+{
+    Towel,
+    Key,
+    Hammer,
+    Tape,
+    Wood,
+    Knife,
+    Broom
+}
+
+
 public class Grabable : Interactable
 {
+    public TypeOfGrabable typeOfobject;
     private Rigidbody rb;
     private BoxCollider col;
 
