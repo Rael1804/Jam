@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1946338511506299882}
   - component: {fileID: 2840821783037951616}
+  - component: {fileID: 1528562464}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -43,3 +44,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e85f7a47b16a23d48ba9af63245364a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grabablePosition: {fileID: 0}
+  grabableObject: {fileID: 0}
+  maxFps: 144
+--- !u!114 &1528562464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8049565093059682955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 729af53af4ae33c40aacb6dd630b381f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuchillo: {fileID: 0}
+  charco: {fileID: 0}
+  ventana: {fileID: 0}
+  candado: {fileID: 0}
+  barrer: {fileID: 0}
+  cable: {fileID: 0}
