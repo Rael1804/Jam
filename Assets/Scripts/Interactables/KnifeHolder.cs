@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class KnifeHolder : Interactable
 {
+    public bool needToReplace = true;
     public TypeOfGrabable tipo;
     public GameObject boxWithAllTheKnifes;
     public override void Interact()
@@ -14,7 +15,10 @@ public class KnifeHolder : Interactable
             GameObject knife = GameManager.Instance.grabableObject;
             if (knife.GetComponent<Grabable>().typeOfobject == tipo)
             {
-                Invoke("ChangeModel", 0.5f);
+                if (needToReplace)
+                {
+                    Invoke("ChangeModel", 0.5f);
+                }
 
                 Destroy(knife, 0.5f);
                 knife.transform.DOMove(transform.position, 0.5f);
