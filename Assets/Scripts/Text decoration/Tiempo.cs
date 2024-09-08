@@ -39,7 +39,7 @@ public class Tiempo : MonoBehaviour
             // Actualizar el texto del temporizador
             UpdateTimerDisplay();
         }
-        else if (currentTime == 0)
+        else if (currentTime < 0.1f )
         {
             player.SetActive(false);
             sonambulo.SetActive(true);
