@@ -18,19 +18,19 @@ public class GameManager : MonoBehaviour
 
     public void Awake()
     {
-        if (_instance != null && _instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            _instance = this;
-            QualitySettings.vSyncCount = 1;
-            Application.targetFrameRate = maxFps;
-            tareas = GetComponent<TareasHechas>();
-            tiempo = GetComponent<Tiempo>();
-        }
+        //if (_instance != null && _instance != this)
+        //{
+        //    Destroy(this.gameObject);
+        //}
+        //else
+        //{
+        _instance = this;
+        QualitySettings.vSyncCount = 1;
+        Application.targetFrameRate = maxFps;
+        tareas = GetComponent<TareasHechas>();
+        tiempo = GetComponent<Tiempo>();
+        //}
 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 }
