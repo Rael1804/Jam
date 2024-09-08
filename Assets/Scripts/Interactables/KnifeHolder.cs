@@ -8,22 +8,29 @@ public class KnifeHolder : Interactable
     public bool needToReplace = true;
     public TypeOfGrabable tipo;
     public GameObject boxWithAllTheKnifes;
+
+    private bool alreadyInteracted = false;
+
     public override void Interact()
     {
-        if (GameManager.Instance.grabableObject != null)
+        if (!alreadyInteracted)
         {
-            GameObject knife = GameManager.Instance.grabableObject;
-            if (knife.GetComponent<Grabable>().typeOfobject == tipo)
+            alreadyInteracted = true;
+            if (GameManager.Instance.grabableObject != null)
             {
-                if (needToReplace)
+                GameObject knife = GameManager.Instance.grabableObject;
+                if (knife.GetComponent<Grabable>().typeOfobject == tipo)
                 {
-                    Invoke("ChangeModel", 0.5f);
-                }
+                    if (needToReplace)
+                    {
+                        Invoke("ChangeModel", 0.5f);
+                    }
 
-                Destroy(knife, 0.5f);
-                knife.transform.DOMove(transform.position, 0.5f);
-                knife.transform.DORotate(transform.rotation.eulerAngles, 0.5f);
-                GameManager.Instance.tareas.doneTask(tipo);
+                    Destroy(knife, 0.5f);
+                    knife.transform.DOMove(transform.position, 0.5f);
+                    knife.transform.DORotate(transform.rotation.eulerAngles, 0.5f);
+                    GameManager.Instance.tareas.doneTask(tipo);
+                }
             }
         }
     }
